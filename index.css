@@ -1,0 +1,48 @@
+/* User Info Section */
+.user-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100; /* Ensure it appears above other elements */
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user-name {
+    color: #6c5b7b; /* Dark purple */
+    font-weight: bold;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #6c5b7b; /* Dark purple */
+    border-radius: 5px;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #6c5b7b; /* Dark purple */
+    text-decoration: none;
+}
+
+.user-dropdown a:hover {
+    background-color: #e4b8b8; /* Light pink */
+}

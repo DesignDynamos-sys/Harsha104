@@ -1,0 +1,72 @@
+/* Dialog Styles */
+.dialog {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #B388FF; /* Light Purple border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: none;
+    z-index: 1000;
+}
+
+.dialog h2 {
+    color: #E91E63; /* Bright Pink */
+    font-family: 'Cooper Black', sans-serif;
+    margin-bottom: 20px;
+}
+
+.dialog .input-group {
+    margin-bottom: 15px;
+}
+
+.dialog .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #B388FF; /* Light Purple */
+}
+
+.dialog .input-group input,
+.dialog .input-group select,
+.dialog .input-group textarea {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px;
+    border: 1px solid #B388FF; /* Light Purple border */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dialog .submit-btn {
+    background-color: #E91E63; /* Bright Pink */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dialog .submit-btn:hover {
+    background-color: #C2185B; /* Darker Pink */
+}
+
+.dialog .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #E91E63; /* Bright Pink */
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dialog .close-btn:hover {
+    color: #C2185B; /* Darker Pink */
+}
